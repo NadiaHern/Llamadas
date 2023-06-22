@@ -1,0 +1,74 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/fondo"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvcentro1"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/iconocel"
+            android:layout_marginBottom="50dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/panelblanco"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="18dp"
+                        android:background="@drawable/iconocon"/>
+
+
+                    <TextView
+                        android:id="@+id/tvtelefono"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv1"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:hint="Teléfono"
+                        android:textColor="@color/black"
+                        android:textSize="23dp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
